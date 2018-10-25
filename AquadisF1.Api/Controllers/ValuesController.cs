@@ -41,10 +41,10 @@ namespace AquadisF1.Api.Controllers
         {
             if (_accountLogic.Create(user))
             {
-                return "jeej";
+                return "user create";
             }
 
-            return "kankermongool";
+            return "Error";
         }
 
         // PUT api/values/5

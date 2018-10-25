@@ -25,7 +25,7 @@ namespace AquadisF1.Api.Controllers
         [HttpPost("login")]
         public ActionResult<JsonResult> Login([FromBody] AquadisF1.DTO.Account.Login user)
         {
-            if (!_accountLogic.Login(user.Email, user.Password)) return new JsonResult("ur login info is not valid brother.");
+            if (!_accountLogic.Login(user.Email, user.Password)) return new JsonResult("ur login info is not valid.");
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes("SADFSDAFDKj23j32jh423@#KROROKKO@#FKO@#KRO@#KOR#@OKP$OPK#@");
             var tokenDescriptor = new SecurityTokenDescriptor
@@ -52,7 +52,7 @@ namespace AquadisF1.Api.Controllers
                 Email = "kejejejejje"
             });
             
-            Console.WriteLine("KKE");
+            Console.WriteLine("test");
 
             return new JsonResult(new User
             {
@@ -76,7 +76,7 @@ namespace AquadisF1.Api.Controllers
                 return "jeej";
             }
 
-            return "kankermongool";
+            return "Error ActionResult";
         }
         // GET api/values/5
         [HttpGet("{id}")]
@@ -85,7 +85,7 @@ namespace AquadisF1.Api.Controllers
             User user = _accountLogic.Read(id);
             if (user == null)
             {
-                return "kankermongool";
+                return "Error ActionResult";
             }
 
             return user.Password;
