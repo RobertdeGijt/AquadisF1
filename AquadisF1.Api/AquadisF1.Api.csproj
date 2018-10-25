@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\AquadisF1.DTO\AquadisF1.DTO.csproj" />
+        <ProjectReference Include="..\AquadisF1.Factory\AquadisF1.Factory.csproj" />
+        <ProjectReference Include="..\AquadisF1.Model\AquadisF1.Model.csproj" />
+        <ProjectReference Include="..\AquadisF1.Util\AquadisF1.Util.csproj" />
+    </ItemGroup>
+
+</Project>

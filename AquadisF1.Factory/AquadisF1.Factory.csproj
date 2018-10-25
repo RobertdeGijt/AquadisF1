@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\AquadisF1.DAL.Interface\AquadisF1.DAL.Interface.csproj"/>
+        <ProjectReference Include="..\AquadisF1.DAL\AquadisF1.DAL.csproj"/>
+        <ProjectReference Include="..\AquadisF1.Logic.Interface\AquadisF1.Logic.Interface.csproj"/>
+        <ProjectReference Include="..\AquadisF1.Logic\AquadisF1.Logic.csproj"/>
+    </ItemGroup>
+
+</Project>
